@@ -1,0 +1,1027 @@
+html {
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #9e9e9e;
+    overflow-x: hidden !important;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0 !important;
+    text-decoration: none !important;
+    list-style-type: none !important;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #21212E;
+}
+
+.space {
+    display: block;
+}
+
+.headerButtons {
+    display: flex;
+    flex-direction: row;
+}
+
+.plans {
+    color: #fff;
+    background-image: linear-gradient(115deg, #5D9EFE, #BD11FA);
+    box-shadow: 0 0 30px #822EFF;
+    padding: 1.5em 3.5em;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 1.3em;
+    transition: 0.3s ease;
+}
+
+.plans:hover {
+    box-shadow: 0 0 0 #822EFF;
+}
+
+header .triangle {
+    position: absolute;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 150px;
+    height: 18vh;
+}
+
+.circle {
+    position: absolute;
+    top: 160vh;
+    right: -250px;
+    z-index: -999;
+    width: 30%;
+    display: block;
+}
+
+#scrollPartners {
+    width: 0.1px;
+    height: 0.1px;
+    background-color: transparent;
+    position: absolute;
+    top: 100vh;
+    left: 0;
+}
+
+#scrollAbout {
+    width: 0.1px;
+    height: 0.1px;
+    background-color: transparent;
+    position: relative;
+    top: -350px;
+    left: 0;
+}
+
+#scrollPricing {
+    width: 0.1px;
+    height: 0.1px;
+    background-color: transparent;
+    position: relative;
+    top: -50px;
+    left: 0;
+}
+
+/* Navigation */
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height: 100px;
+    margin: 15px auto 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 999;
+}
+
+
+
+/* NOT MINE   NOT MINE   NOT MINE   NOT MINE   NOT MINE */
+nav #submenu {
+    display: none;
+}
+/* NOT MINE   NOT MINE   NOT MINE   NOT MINE   NOT MINE */
+
+
+
+nav > a {
+    margin-right: auto;
+}
+
+nav a img {
+    height: 80px;
+}
+
+nav .navL {
+    display: flex;
+}
+
+nav .navL li {
+    
+}
+
+nav .navL li a {
+    color: #66667E;
+    font-size: 1.2em;
+    padding: 0 30px;
+    float: left;
+    transition: 0.5s ease;
+}
+
+nav .navL li a:hover {
+    color: #fff;
+}
+
+nav .contactParent {
+    display: block;
+}
+
+nav .contactParent .contact {
+    margin-left: 10px;
+}
+
+nav .contactParent .contact a {
+    border: 2px #fff solid;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 10px 35px;
+    transition: 1s ease;
+}
+
+nav .contactParent .contact a:hover {
+    background-color: #fff;
+    color: #21212E;
+}
+/* Navigation */
+
+/* Header */
+header {
+    height: 100vh;
+    background-image: url(../images/background_image.png);
+    background-repeat: no-repeat;
+    background-size: cover 100%;
+    background-position: center;
+}
+
+header .wrapper {
+    max-width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+header .wrapper h1 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 2.7rem;
+}
+
+header .wrapper p {
+    color: #66667E;
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-bottom: 5rem;
+}
+
+header .wrapper .startNow {
+    border: 2px #fff solid;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 1.3em;
+    padding: 1.4em 3em;
+    transition: 1s ease;
+}
+
+header .wrapper .startNow:hover {
+    background-color: #fff;
+    color: #21212E;
+}
+/* Header */
+
+/* Partners */
+.partners {
+    display: flex;
+    max-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0 80px;
+    padding-top: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.partners .brands {
+    display: block;
+}
+
+.partners .mobileBrands {
+    display: none;
+}
+
+.partners .brands img {
+    max-width: 95%;
+}
+
+.partners .wrapperPartners {
+    max-width: 500px;
+    margin: 0;
+}
+
+.partners .wrapperPartners h2 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 2.3em;
+    margin-bottom: 2rem;
+    line-height: 1.2em;
+}
+
+.partners .wrapperPartners p {
+    color: #66667E;
+    font-size: 1em;
+    line-height: 2.4em;
+}
+/* Partners */
+
+/* About */
+.about {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 80px;
+}
+
+.about .wrapperAbout {
+    width: 25%;
+}
+
+.about .wrapperAbout .feature {
+    color: #00EC98;
+    background-color: rgba(0, 236, 152, 0.1);
+    padding: 5px 15px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.about .wrapperAbout h3 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 2.3em;
+    margin-bottom: 1.5rem;
+    line-height: 1.2em;
+}
+
+.about .wrapperAbout p {
+    color: #66667E;
+    font-size: 1em;
+    line-height: 2.4em;
+    margin-bottom: 4rem;
+}
+
+.about .wrapperAbout .plans {
+    padding: 1.5rem 5rem !important;
+    margin-right: 0 !important;
+}
+
+.about .boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 60px;
+}
+
+.about .boxes > div {
+    height: 360px;
+    max-width: 350px;
+    margin-left: 40px;
+    margin-top: 40px;
+    border-radius: 5px;
+    background-color: #21212E;
+    -webkit-box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.6);
+}
+
+.about .boxes .box1 {
+    margin-top: -20px;
+}
+
+.about .boxes .box2 {
+    margin-bottom: 0;
+}
+
+.about .boxes .box3 {
+    margin-top: -20px;
+}
+
+.about .boxes .box4 {
+    margin-bottom: -20px;
+}
+
+.about .boxes div .boxText {
+    padding: 30px;
+    position: relative;
+    top: 50px;
+}
+
+.about .boxes div .boxText h1 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.about .boxes div .boxText p {
+    color: #66667E;
+    line-height: 2.5;
+    font-size: 0.9em;
+}
+
+.about .boxes div .boxIcon {
+    background-color: rgba(57, 57, 77, 0.3);
+    padding: 15px 0;
+    position: relative;
+    top: 60px;
+}
+
+.about .boxes div .boxIcon img {
+    height: 50px;
+    padding-left: 30px;
+}
+/* About */
+
+/* Pricing */
+.pricing {
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.pricing .pricingWrapper {
+    text-align: center;
+}
+
+.pricing .pricingWrapper h4 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 2.3em;
+    margin-bottom: 1.5rem;
+    padding: 0 10%;
+    line-height: 1.2em;
+}
+
+.pricing .pricingWrapper p {
+    color: #66667E;
+    line-height: 2;
+    font-size: 1em;
+    padding: 0 10%;
+    margin-bottom: 40px;
+}
+
+.pricing .pricingWrapper a {
+    color: #fff;
+    font-size: 1.5em;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    font-weight: 500;
+    padding: 15px 35px;
+}
+
+.pricing .boxPrice {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+}
+
+.pricing .boxPrice > div {
+    width: 25%;
+    padding-bottom: 70px;
+    border-radius: 5px;
+    background-color: #21212E;
+    -webkit-box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.6);
+}
+
+.pricing .boxPrice .boxBig {
+    padding: 70px 0;
+    margin-bottom: 100px;
+    z-index: 1;
+}
+
+.pricing .boxPrice .boxBig h1 {
+    position: relative;
+    top: -75px;
+}
+
+.pricing .boxPrice .boxBig .boxBigBusiness {
+    position: static;
+}
+
+.pricing .boxPrice .boxBig p {
+    position: relative;
+    top: -75px;
+}
+
+.pricing .boxPrice .boxBig .boxBigText {
+    margin-bottom: -20px;
+}
+
+.pricing .boxPrice .boxBig .priceBox {
+    top: -20px;
+}
+
+.pricing .boxPrice > div .priceBox {
+    background-color: rgba(57, 57, 77, 0.3);
+    padding: 20px 0 0 0;
+    position: relative;
+    top: 60px;
+    text-align: center;
+}
+
+.pricing .boxPrice > div .priceBox h2 {
+    color: #fff;
+    font-size: 3em;
+    line-height: 1;
+}
+
+.pricing .boxPrice > div .priceBox {
+    margin-bottom: 0 !important;
+    line-height: 1.6 !important;
+}
+
+.pricing .boxPrice > div h1 {
+    color: #fff;
+    font-size: 4em;
+    line-height: 0.8;
+    padding-top: 35px;
+}
+
+.pricing .boxPrice .perMonth {
+    margin-bottom: 25px;
+}
+
+.pricing .boxPrice > div p {
+    margin-bottom: 50px;
+    color: #66667E;
+    line-height: 3;
+    font-weight: 300;
+    font-size: 1.2em;
+    padding: 0 15%;
+}
+
+.pricing .boxPrice .plans {
+    padding: 1.5rem 5rem !important;
+    margin-right: 0 !important;
+}
+/* Pricing */
+
+/* Bonus */
+.bonus {
+    background-color: rgba(57, 57, 77, 0.3);
+    width: 100%;
+    min-height: 200px;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bonus h5 {
+    color: #fff;
+    font-size: 2.3em;
+}
+
+.bonus p {
+    color: #66667E;
+    line-height: 2.5;
+    font-size: 0.9em;
+    margin-right: 40px;
+}
+
+.bonus .plans {
+    padding: 1.5rem 5rem !important;
+    margin-right: 0 !important;
+}
+/* Bonus */
+
+/* Footer */
+footer {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px 10%;
+}
+
+footer h6 {
+    color: #fff;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.fText {
+    
+}
+
+.fText p {
+    color: #66667E;
+    line-height: 2.5;
+    font-size: 0.9em;
+}
+
+.fContact {
+    text-align: center;
+}
+
+.fContact h6 {
+    margin-bottom: 0.2rem;
+}
+
+.fContact a {
+    color: #66667E;
+    text-decoration: underline !important;
+    line-height: 2.5;
+    font-size: 0.9em;
+}
+
+.fContact p {
+    color: #66667E;
+    line-height: 2.5;
+    font-size: 0.9em;
+}
+
+.fMedia h6 {
+    margin-bottom: 0.7rem;
+}
+
+.fMedia {
+    text-align: center;
+}
+
+.fMedia img {
+    width: 40px;
+    display: inline-block;
+}
+
+.space {
+    margin-right: 15px;
+}
+
+footer > p {
+    color: #66667E;
+    line-height: 2.5;
+    font-size: 1.1em;
+}
+/* Footer */
+
+
+@media only screen and (max-width: 1280px) {
+    html {
+        font-size: 10px;
+    }
+    
+    .partners .brands img {
+        max-width: 90%;
+    }
+    
+    
+    .about .boxes > div {
+        max-width: 300px;
+    }
+    
+    .pricing {
+        margin-top: 100px;
+    }
+    
+    .pricing .boxPrice .boxBig {
+        padding: 50px 0 100px 0;
+    }
+    
+    .pricing .boxPrice .boxBig h1 {
+        top: -55px;
+    }
+
+    .pricing .boxPrice .boxBig p {
+        top: -55px;
+    }
+
+    .pricing .boxPrice .boxBig .priceBox {
+        top: 0px;
+    }
+
+    .pricing .boxPrice > div .priceBox {
+        top: 40px;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .circle {
+        display: none;
+    }
+    
+    #scrollPartners {
+        top: calc(100vh - 80px);
+    }
+    
+    #scrollAbout {
+        top: calc(-50px - 80px);
+    }
+    
+    #scrollPricing {
+        top: calc(-50px - 80px);
+    }
+    
+    /* NOT MINE   NOT MINE   NOT MINE   NOT MINE   NOT MINE */
+    nav {
+        background-color: rgb(57, 57, 77);
+        position: fixed;
+        z-index: 999;
+        margin: 0 auto 0 auto;
+        width: 100%;
+        height: 80px;
+    }
+    
+    nav a img {
+        height: 55px;
+        padding-left: 40px;
+        padding-top: 5px;
+    }
+    
+    nav #submenu {
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 40px;
+        width: 40px;
+        height: 50px;
+        padding: 6px 0 6px 6px;
+        border: none;
+        background-color: rgb(57, 57, 77);
+        cursor: pointer;
+    }
+    
+    nav #submenu span {
+        position: relative;
+        top: 0;
+        display: block;
+        width: 100%;
+        height: 3px;
+        margin-bottom: 5px;
+        transition: all 0.2s ease;
+        border-radius: 15px;
+        background-color: #fff;
+    }
+    
+    nav #submenu span:nth-child(2) {
+        right: 0;
+        width: 80%;
+        opacity: 1;
+    }
+    
+    nav #submenu span:nth-child(3) {
+        width: 60%;
+    }
+    
+    nav.active #submenu span:nth-child(1) {
+        top: 10px;
+        left: -4px;
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    
+    nav.active #submenu span:nth-child(2) {
+        right: -100%;
+        opacity: 0;
+    }
+    
+    nav.active #submenu span:nth-child(3) {
+        top: -6px;
+        left: -4px;
+        width: 100%;
+        -ms-transform: rotateZ(-45deg);
+        transform: rotateZ(-45deg);
+    }
+    
+    nav .navL {
+        display: none;
+        position: absolute;
+        top: 80px;
+        width: 100%;
+    }
+    
+    nav.active .navL {
+        display: block;
+        float: none;
+        clear: both;
+    }
+    
+    nav.active .navL li {
+        display: block !important;
+    }
+    
+    nav.active .navL li a {
+        padding: 20px 0;
+        width: 100%;
+        text-align: center;
+        color: #f2f2f2;
+        background-color: rgba(57, 57, 77, 0.95);
+        transition: 0s ease;
+    }
+    
+    nav.active .navL li a:hover {
+        background-color: rgba(57, 57, 77, 1);
+    }
+    
+    nav .contactParent {
+        display: none;
+    }
+    /* NOT MINE   NOT MINE   NOT MINE   NOT MINE   NOT MINE */
+    
+    
+    
+    
+    
+    
+    
+    header {
+        margin-bottom: 6rem;
+    }
+    
+    header .triangle {
+        top: 75vh;
+    }
+    
+    header .wrapper {
+        top: 40%;
+        transform: translateY(-40%);
+        text-align: center;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    
+    header .wrapper p {
+        margin-bottom: 2rem;
+    }
+    
+    .headerButtons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .plans {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    
+    
+    
+    
+    
+    
+    .partners {
+        padding: 0 30px;
+        flex-direction: column-reverse;
+        margin-bottom: 5rem;
+    }
+    
+    .partners .brands {
+        display: none;
+    }
+    
+    .partners .mobileBrands {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .partners .wrapperPartners .space {
+        display: none;
+    }
+    
+    .partners .wrapperPartners p {
+        line-height: 2em;
+    }
+    
+    .partners .wrapperPartners {
+        margin-bottom: 50px;
+        width: 300px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    .about {
+        padding: 0 30px;
+        flex-direction: column;
+        margin-bottom: 10rem;
+    }
+    
+    .about .wrapperAbout {
+        width: 300px;
+    }
+    
+    .about .wrapperAbout p {
+        line-height: 2em;
+    }
+    
+    .about .wrapperAbout .plans {
+        padding: 1.5rem 103px !important;
+        margin: 0 auto;
+    }
+    
+    .about .boxes {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+        margin-top: 50px;
+    }
+    
+    .about .boxes > div {
+        height: 350px;
+        width: 300px;
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 50px !important;
+    }
+
+    .about .boxes div .boxText {
+        top: 40px;
+    }
+
+    .about .boxes div .boxText p {
+        line-height: 2;
+    }
+
+    .about .boxes div .boxIcon {
+        padding: 10px 0 5px 0;
+        position: relative;
+        top: 45px;
+    }
+
+    .about .boxes div .boxIcon img {
+        height: 45px;
+        padding-left: 30px;
+    }
+    
+/* Pricing */
+    .pricing {
+        margin-top: 0;
+    }
+    
+    .pricing .boxPrice {
+        margin-top: 70px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .pricing .boxPrice > div {
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    
+    .pricing .boxPrice .boxBig {
+        padding: 70px 0;
+        width: 55%;
+        margin-bottom: 50px;
+    }
+/* Pricing */
+    
+/* Bonus */
+    .bonus {
+        text-align: center;
+        min-height: 250px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .bonus p {
+        margin-bottom: 40px;
+        margin-right: 0;
+    }
+    
+    .bonus .bonusBttn {
+        padding-bottom: 30px;
+    }
+/* Bonus */
+    
+/* Footer */
+    footer {
+        grid-template-columns: 1fr;
+        padding: 50px 10%;
+    }
+    
+    .fText {
+        margin-bottom: 30px;
+    }
+    
+    .fContact {
+        margin-bottom: 30px;
+    }
+    
+    .fMedia {
+        margin-bottom: 50px;
+    }
+    
+    footer > p {
+        text-align: center;
+    }
+/* Footer */
+}
+
+@media only screen and (max-width: 600px) {
+/* Pricing */
+    .pricing .boxPrice > div {
+        width: 75%;
+    }
+    
+    .pricing .boxPrice .boxBig {
+        width: 80%;
+    }
+/* Pricing */
+    
+    .bonus {
+        min-height: 350px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    html {
+        font-size: 13px;
+    }
+    
+    nav a img {
+        padding-left: 20px;
+        height: 45px;
+    }
+    
+    header .wrapper {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    #scrollAbout {
+        top: 80px;
+    }
+    
+    nav.active .navL li a {
+        padding: 20px 0 !important;
+    }
+    
+    header .wrapper {
+        margin-top: 50px;
+        font-size: 9px;
+    }
+    
+    header .triangle {
+        display: none;
+    }
+    
+    .partners h2 {
+        margin-top: 200px;
+    }
+    
+    .about .feature {
+        margin-top: 200px;
+    }
+}
+
+@media only screen and (max-height: 390px) {
+    html {
+        font-size: 11px;
+    }
+    
+    header .wrapper {
+        font-size: 8px;
+    }
+}
